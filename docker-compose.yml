@@ -3,9 +3,7 @@ version: '3.4'
 services:
 
   crypto-backend:
-    container_name: crypto-backend
-    build:
-      context: ./crypto-backend
+    build: ./crypto-backend
     volumes:
        - './crypto-backend:/usr/src/app'
     ports:
