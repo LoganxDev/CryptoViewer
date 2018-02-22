@@ -1,0 +1,1 @@
+App for viewing crypto currencies on the market in react-native with flask as the back end.
