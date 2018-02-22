@@ -1,13 +1,13 @@
 # users-service/manage.py
 
 
-from flask_script import Manager
+from flask.cli import FlaskGroup
 
 from project import app
 
 
-manager = Manager(app)
+cli = FlaskGroup(app)
 
 
 if __name__ == '__main__':
-    manager.run()
+   	cli.run()

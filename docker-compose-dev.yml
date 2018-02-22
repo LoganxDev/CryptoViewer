@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.4'
 
 services:
 
@@ -8,6 +8,9 @@ services:
       context: ./users-service
       dockerfile: Dockerfile-dev
     volumes:
-      - './users-service:/usr/src/app'
+       - './users-service:/usr/src/app'
+    environment:
+       - FLASK_APP=project/__init__.py
+       - FLASK_DEBUG=1
     ports:
-      - 5001:5000
+       - 5001:5000
